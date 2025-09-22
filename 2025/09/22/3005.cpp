@@ -3,14 +3,15 @@
 
 using std::vector;
 
-
 int main() {
 	Solution sol;
 	
-	//vector<int> example1 = {1,2,2,3,1,4};
-	//vector<int> example2 = {1,2,3,4,5};a
-	//
-	//
+	// Provided examples
+
+	vector<int> example1 = {1,2,2,3,1,4};
+	vector<int> example2 = {1,2,3,4,5};
+	
+	// Pseudo-randomly generated vector lists for checking.
 
 	vector<int> vector1 = {58, 12, 77, 23, 46, 91, 4, 66, 35, 89, 7, 99};
 
@@ -39,14 +40,17 @@ int main() {
 
 	vector<int> vectorTest = {10,12,11,9,6,19,11};
 
+	
+	
+	sol.maxFrequencyElements(example1);
+	sol.maxFrequencyElements(example2);
 	sol.maxFrequencyElements(vectorTest);
-	//sol.maxFrequencyElements(vector2);
-	//sol.maxFrequencyElements(vector3);
-	//sol.maxFrequencyElements(vector4);
-	//sol.maxFrequencyElements(vector5);
-	//sol.maxFrequencyElements(vectorEmpty);
-
-
+	sol.maxFrequencyElements(vector1);
+	sol.maxFrequencyElements(vector2);
+	sol.maxFrequencyElements(vector3);
+	sol.maxFrequencyElements(vector4);
+	sol.maxFrequencyElements(vector5);
+	sol.maxFrequencyElements(vectorEmpty);
 
 	return 0;
 }
